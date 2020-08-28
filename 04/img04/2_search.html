@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//1. 请用户输入一条消息内容
+		var msg=prompt("请输入要发送的消息内容:")
+		//2. 用search查找消息内容中是否包含符合正则表达式要求的敏感词
+		//                昨天ppt44页
+		var i=msg.search(/([我卧]|wo)\s*([草艹槽]|cao)/i);
+		//如果在msg中找到"我草"，则返回"我草"的"我"字在msg中的下标位置
+		//如果在msg中没找到"我草"，则返回-1
+		//3. 如果在消息内容中找到敏感词
+		if(i!=-1){//我们就向网页内容中写入一个<h1 style="color:red">发现敏感词！禁止发送!</h1>
+			document.write(`<h1 style="color:red">发现敏感词！禁止发送!</h1>`);
+		}else{//4. 否则如果在消息内容中没有找到敏感词，我们就向网页内容中写入一个<h1 style="color:green">然哥说: 消息内容</h1>
+			document.write(`<h1 style="color:green">然哥说: ${msg}</h1>`);
+		}
+	</script>
+</body>
+</html>

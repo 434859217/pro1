@@ -1,0 +1,252 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style>
+			#a1{
+				color: #FFE;
+				font-size: 25px;
+				margin-bottom: 10px;
+				text-decoration:none;
+			}
+			#a2{
+				width: 80%;max-height: 500px;
+
+			}
+			#d1{
+				background-color: #000000;
+			}
+			.carousel-indicators li{
+				width: 12px;height: 12px;
+				border-radius: 50%;
+				background: #fff;
+				margin-left: 0.25rem;
+				margin-right: 0.25rem;
+			}
+			.carousel-indicators .active {
+			background: #0aa1ed;
+			}
+			.carousel-control-next{
+				width: 4%;height: 20%;
+				background-color: #aaa;
+				border-radius:0.25rem ;
+				top: 40%;
+			}
+			.carousel-control-prev{
+				width: 4%;height: 20%;
+				background-color: #aaa;
+				border-radius:0.25rem ;
+				top: 40%;
+			}
+			hr{
+				width: 88%;height: 2px;
+				background-color: #000000;
+			}
+			#a2{
+				float: flex;
+			}
+			#a3{
+				
+				color: #FFf;
+				width: 100%;
+				background-color: #000000;
+				margin-top: 35px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar bg-dark navbar-expand-lg">
+				<!--永远显示的a标签-->
+				<!--navbar：开始使用navbar中的样式 -->
+				<!--navbar-dark：其中的字体为浅色-->
+				<!--navbar-expand-lg：在大页面时显示-->
+				<a id="a1" href="#">明日方舟</a>
+				<!--小屏幕小时，大屏幕隐藏按钮-->
+				<!--navbar-brand:一个类型，规定了字号行高内外边距-->
+				<button data-toggle="collapse" data-target="#demo" class="navbar-dark navbar-toggler">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="demo" class="collapse navbar-collapse">
+					<ul class="navbar-nav navbar-dark">
+						<li class="nav-item"><a class="nav-link" href="">背景介绍</a></li>
+						<li class="nav-item"><a class="nav-link" href="">阵营介绍</a></li>
+						<li class="nav-item"><a class="nav-link" href="">人物介绍</a></li>
+						<li class="nav-item"><a class="nav-link" href="">玩法介绍</a></li>
+						<li class="nav-item"><a class="nav-link" href="">氪金通道</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			<div class="container">
+			<div id="demo1" class="carousel" data-ride="carousel">
+				
+					<!--1.轮播的图片-->
+					<div class="carousel-inner">
+						<div class="carousel-item active"  align="center">
+							<img class="w-80" src="4afbfbedab64034f1dfc8e79b8c379310a551d9f.jpg" />
+						</div>
+						<div class="carousel-item" align="center">
+							<img class="w-80" src="a08b87d6277f9e2f43b5946c0830e924b999f3d6.jpg" />
+						</div>
+						<div class="carousel-item" align="center">
+							<img class="w-80" src="95eef01f3a292df57080696eab315c6034a8730e.jpg" />
+						</div>
+						<div class="carousel-item" align="center">
+							<img class="w-80 " src="d788d43f8794a4c283116e5519f41bd5ad6e399a.jpg" />
+						</div>
+					</div>
+					<!--2.轮播指示器-->
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+						<li data-target="#demo" data-slide-to="3"></li>
+					</ul>
+					<!--3.左右箭头-->
+					<a data-slide="next" href="#demo1" class="carousel-control-next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					<a data-slide="prev" href="#demo1" class="carousel-control-prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+				</div>
+				<hr />
+				<div class="container">
+					<div class="bg-dark">
+					<div class="row">
+						<div class="col-md-4 col-sm-12 text-center">
+							<img class="w-50" style="margin-top: 55px;" src="u=1616825292,4037588749&fm=15&gp=0.jpg">
+							<p><button data-toggle="modal" data-target="#d3" class="btn btn-dark">罗德岛</button>
+			<div id="d3" class="modal">
+				<div class="modal-dialog">
+					<div class="modal-content">.
+					<div class="modal-header">
+						罗德岛
+					</div>
+					<div class="modal-body">
+						罗德岛对外声称是一家制药公司，但实际上是混合了感染者成员在内，拥有完整独立武装力量与矿石感染研究与检疫手段的一个组织，是感染者问题专家。罗德岛的核心建筑是一支移动舰。据周年庆活动Side Story《生于黑夜》剧情，罗德岛前身为巴别塔，而其本舰由特雷西娅及其追随者在雷姆必拓发掘，根据舰上文件而命名。<br />
+						虽然自称是制药公司，但感觉【罗德岛】除了制药外什么都做...
+					</div>
+					<div class="modal-footer">
+						<button data-dismiss="modal" class="btn btn-withe btn-sm">关闭</button>
+					</div>
+				   </div>
+				</div>
+			</div></p>
+							</div>
+							
+							
+						<div class="col-md-4 col-sm-12 text-center">
+							<img class="w-50 border-dark border" style="margin-top: 55px;" src="001.jpg">
+							<p><button data-toggle="modal" data-target="#d4" class="btn btn-dark">企鹅物流</button>
+							<div id="d4" class="modal">
+								<div class="modal-dialog">
+									<div class="modal-content">.
+									<div class="modal-header">
+										企鹅物流
+									</div>
+									<div class="modal-body">
+										企鹅物流是一个地下物流组织，进行着各种运输工作，准时率与货损率均优于同行标准，且与罗德岛有合作关系。<br />
+										最初作为一家独立的私人信使公司成立，明面上经营着正常的物流运输业务，实际却从事着情报贩卖、武装押运、秘密运输等地下工作。作为特殊物流公司与情报商人的混合体，企鹅物流在资源运输、情报传递等机要行动起到了巨大作用。因此即使企鹅物流的许多业务已经游走在各国法律的边缘，各政治势力却对其保有接近默许的态度。现已成为一家以龙门为业务核心的地下物流组织。<br />
+										此外，【企鹅物流】的老板————一只帝企鹅，也是一名出名的说唱歌手...
+									</div>
+									<div class="modal-footer">
+										<button data-dismiss="modal" class="btn btn-withe btn-sm">关闭</button>
+									</div>
+								   </div>
+								</div>
+							</div></p>
+							</div>
+						<div class="col-md-4 col-sm-12 text-center">
+							<img class="w-50 border-dark border" style="margin-top: 55px;" src="002.png">
+							<p><button data-toggle="modal" data-target="#d5" class="btn btn-dark">龙门</button>
+							<div id="d5" class="modal">
+								<div class="modal-dialog">
+									<div class="modal-content">.
+									<div class="modal-header">
+										龙门
+									</div>
+									<div class="modal-body">
+										由炎国皇族魏彦吾控制的移动城邦。看似是一座由内部各势力分隔统治的城市，实际上各层级间却有着相当的组织纪律性与同调性。一些传统城市中所禁止的产业，在龙门都有着专门的实施渠道；同时，对于这些产业，龙门也具备着合理有效的管理办法。因此整座城市处于一种“民众高度自由，高层集权管理”的状态。龙门没有明显的政治立场，目前以经济和军备力量发展为主要规划方向。有很多爱好自由、厌倦政治的个人和民间团体，选择了在这座城中谋生。<br />
+										同时，【龙门】领袖————魏彦吾，与【整合运动】领袖————塔露拉，有着莫大的关系...
+									</div>
+									<div class="modal-footer">
+										<button data-dismiss="modal" class="btn btn-withe btn-sm">关闭</button>
+									</div>
+								   </div>
+								</div>
+							</div></p>
+							</div>
+					</div>
+					<!-- <div class="row">
+					<div class="col-4 col-sm-12 text-center" style="color: #fff;">罗德岛</a></div>
+					<div class="col-4 col-sm-12 text-center" style="color: #fff;">企鹅物流</a></div>
+					<div class="col-4 col-sm-12 text-center" style="color: #fff;">龙门</a></div>
+					</div> -->
+					<div class="row mt-5">
+						<div class="col-md-6 col-sm-12 text-center">
+							<img id="a2" class="border-dark border" src="03.jpg">
+							  <p><button data-toggle="modal" data-target="#d6" class="btn btn-dark">整合运动</button>
+							  <div id="d6" class="modal">
+							  	<div class="modal-dialog">
+							  		<div class="modal-content">.
+							  		<div class="modal-header">
+							  			整合运动
+							  		</div>
+							  		<div class="modal-body">
+							  			整合运动是一个为底层感染者争取权益的革命组织，同时也是规模最大的感染者组织。整合运动宣称“感染者应该为自己的身份而骄傲，并用最简单的手段夺取世界的公正”，原本的整合运动只是一个普通的地下组织，直到塔露拉成为整合运动的领袖，整合运动开始进行有组织的革命行动。<br />
+										然而现在，因为领袖————塔露拉，因不明原因导致性格大幅度转变，【整合运动】行为已经逐渐脱离原本的性质与目标...
+							  		</div>
+							  		<div class="modal-footer">
+							  			<button data-dismiss="modal" class="btn btn-withe btn-sm">关闭</button>
+							  		</div>
+							  	   </div>
+							  	</div>
+							  </div>
+							  </p>
+							</div>
+						<div class="col-md-6 col-sm-12 text-center">
+							<img id="a2" class="border-dark border" src="04.jpg">
+							<p><button data-toggle="modal" data-target="#d7" class="btn btn-dark">乌萨斯帝国</button>
+							<div id="d7" class="modal">
+								<div class="modal-dialog">
+									<div class="modal-content">.
+									<div class="modal-header">
+										乌萨斯帝国
+									</div>
+									<div class="modal-body">
+										一个有着强大军事实力和广阔土地的巨型帝国，其国力强盛就算是在内乱期间也是首屈一指。有着极为苛刻的对待感染者的规定，是迫害感染者的主要国家地区<br>
+										同时，泰拉大陆上的众多灾难与冲突，或多或少都与【乌萨斯帝国】有关...
+									</div>
+									<div class="modal-footer">
+										<button data-dismiss="modal" class="btn btn-withe btn-sm">关闭</button>
+									</div>
+								   </div>
+								</div>
+							</div></p>
+							</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-6 text-center" style="color: #fff;">整合运动</div>
+						<div class="col-6 text-center" style="color: #fff;">乌萨斯帝国</div>
+					</div> -->
+					</div>
+					<div id="a3" class="bg-dark">
+						<ul class="breadcrumb bg-dark">
+							<li class="breadcrumb-item"><a href="#">进入官网</a></li>
+							<li class="breadcrumb-item"><a href="#">联系我们</a></li>
+							<li class="breadcrumb-item"><a href="#">隐私协议</a></li>
+							<li class="breadcrumb-item"><a href="#">家长监护</a></li>
+						</ul>
+					</div>
+				</div>
+				
+	</body>
+</html>
+
