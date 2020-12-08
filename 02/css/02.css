@@ -7,12 +7,17 @@
 	}
 	#d2{
 		float: none;
-		padding: 5px 5px 5px 5px;		
-		max-width: 190px;
+		padding: 20px 35px 5px 35px;		
+		max-width:415px;
+		height: 335px;
 		background-color: #87d1e9;
 		margin:0 auto;
-		margin-top: 100px;
-		
+		margin-top: 40px;
+		border-radius: 5%;
+	}
+	#d2 p{
+		font-size: 16px;
+		color: #FFF;
 	}
 	#demo3{
 		width: 100%;
